@@ -2,7 +2,10 @@
 Get song links in markdown format using songwhip.com for most popular music services
 
 ### Requirements
-python3
+* python3
+* python libs:
+  * requests
+  * lxml
 ### Usage
 ```bash
 python songwhip.py <track-link>
