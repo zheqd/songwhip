@@ -45,7 +45,7 @@ sw <track-link>
 ```
 ### Example
 
-```bash
+```sh
 sw https://music.yandex.com/album/6768361/track/49333874
 [Yandex](https://music.yandex.com/track/49333874)
 [Spotify](https://open.spotify.com/track/4hWdGAGZepqE1X68o4ss82)
@@ -56,4 +56,14 @@ sw https://music.yandex.com/album/6768361/track/49333874
 [YouTube Music](https://music.youtube.com/watch?v=HSTh5DJyFVk)
 [Deezer](https://www.deezer.com/track/614311812)
 [Napster](https://napster.com/mansionair/we-could-leave/we-could-leave)
+```
+
+```sh
+# to customize output format add environment variables
+export SW_OUTPUT=hyphen # output format [markdown|hyphen]; markdown by default if not specified
+export SW_SERVICES="Spotify,Apple Music" # comma separated list of Music Services to be shown in output; all services by default if not specified
+
+sw https://music.yandex.com/album/6768361/track/49333874
+Spotify - https://open.spotify.com/track/4hWdGAGZepqE1X68o4ss82
+Apple Music - https://music.apple.com/ru/album/we-could-leave/1449253497?i=1449253756&app=music
 ```
