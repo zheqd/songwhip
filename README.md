@@ -1,5 +1,5 @@
 # songwhip zsh plugin
-Get song links in markdown format using songwhip.com for most popular music services
+Get song links in markdown and other formats using songwhip.com for most popular music services
 
 ### Requirements
 * python3
